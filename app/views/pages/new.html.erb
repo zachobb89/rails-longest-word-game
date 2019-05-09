@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card-white"></div>
+
+<h1>Welcome</h1>
+<br>
+
+<ul>
+  <% @letters.each do |letter| %>
+  <button type="button" class="btn btn-warning"><%= letter %></button>
+  <!--  <button><%= letter %></button>></li> -->
+  <% end %>
+</ul>
+
+<form action="/score" method="post">
+  <%= hidden_field_tag :authenticity_token, form_authenticity_token %>
+  <%= hidden_field_tag :letters, @letters %>
+  Find the longest word:<br><br>
+  <input type="text" name="word" class="form-control">
+  <br><br>
+  <input type="submit" value="Submit" class="form-control btn btn-warning" id="sub-btn">
+</form>
+
+</div>
+</div>

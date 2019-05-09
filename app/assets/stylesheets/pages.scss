@@ -1,0 +1,17 @@
+// Place all the styles related to the new controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.container {
+    background-color: white;
+    padding: 30px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
+    border-radius: 0px;
+    margin: 20px auto;
+    text-align: center;
+    width: 800px;
+    position: center;
+}
+
+#sub-btn {
+  width: 150px;
+}
